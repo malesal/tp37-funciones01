@@ -17,10 +17,12 @@ int main() {
 }
 
 int CalcularMaximo(int a, int b) {
-    if (a > b) {
-        return a;
-    } else {
-        return b;
+    bool flag=false ;
+    if(a>b){
+      flag=true  ;
+    } else{
+    return flag;
+        
     }
 }
 
