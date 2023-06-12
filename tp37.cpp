@@ -1,30 +1,27 @@
-
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int CalcularMaximo(int a, int b);
 
 int main() {
-    int num1, num2, maximo;
+    int num1=0, num2=0, maximo;
     
     cout << "Ingrese dos numeros enteros: ";
     cin >> num1 >> num2;
-    maximo = CalcularMaximo(num1, num2);
     
-    cout << "El maximo entre " << num1 << " y " << num2 << " es: " << maximo << endl;
+    
+    cout << "El maximo entre " << num1 << " y " << num2 << " es: " <<CalcularMaximo(num1, num2) << endl;
     
     return 0;
 }
 
 int CalcularMaximo(int a, int b) {
-    bool flag=false ;
+    int max;
     if(a>b){
-      flag=true  ;
-    } else
+      max=a  ;
+    }else
 	{ 
-	  flag= false; 
+	  max=b; 
 	}
-return flag;
+return max;
 }
-        
-
+ 
