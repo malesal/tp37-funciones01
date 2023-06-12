@@ -20,9 +20,11 @@ int CalcularMaximo(int a, int b) {
     bool flag=false ;
     if(a>b){
       flag=true  ;
-    } else{
-    return flag;
-        
-    }
+    } else
+	{ 
+	  flag= false; 
+	}
+return flag;
 }
+        
 
